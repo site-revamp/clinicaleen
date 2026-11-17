@@ -1,0 +1,1659 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101016">
+  <meta name="description" content="Discover quality healthcare at Clinica Leen Medical Center in Sharjah, UAE. Contact our team to enquire about appointments and services.">
+  <title>Clinica Leen Medical Center | Sharjah</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #D866BB;
+      --primary-dark: #B94A9E;
+      --background: #101016;
+      --surface: #181720;
+      --surface-light: #211A27;
+      --text: #FFFFFF;
+      --muted: #B9B4C0;
+      --border: rgba(255,255,255,.09);
+      --radius: 18px;
+      --container: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 40px));
+      margin: auto;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .eyebrow {
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .section-heading {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(34px, 4vw, 49px);
+      line-height: 1.18;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .section-description {
+      color: var(--muted);
+      max-width: 650px;
+      font-size: 15px;
+    }
+
+    .section-header {
+      margin-bottom: 48px;
+    }
+
+    .section-header.center {
+      text-align: center;
+    }
+
+    .section-header.center .section-description {
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 25px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: .25s ease;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      border-color: rgba(255,255,255,.3);
+      color: #fff;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    /* Header */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(16,16,22,.94);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-wrapper {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -.5px;
+    }
+
+    .logo-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 25px;
+      font-weight: 800;
+    }
+
+    .logo small {
+      display: block;
+      font-size: 9px;
+      color: var(--muted);
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-top: -4px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      color: #D9D5DF;
+      transition: .2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 43px;
+      height: 43px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: #fff;
+      border-radius: 12px;
+      font-size: 23px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+
+    .hero {
+      position: relative;
+      padding: 95px 0 105px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 80% 35%, rgba(216,102,187,.16), transparent 32%),
+        linear-gradient(120deg, #101016, #17121B);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 65px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(43px, 5.4vw, 67px);
+      line-height: 1.1;
+      font-weight: 600;
+      letter-spacing: -1.5px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero-content > p {
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 530px;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .hero-note {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 38px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .hero-note-icon {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      background: rgba(216,102,187,.13);
+      border-radius: 50%;
+      color: var(--primary);
+      font-size: 19px;
+    }
+
+    /* Hero visual: CSS background remains visible if image fails */
+
+    .hero-visual {
+      position: relative;
+      min-height: 470px;
+      border-radius: 28px;
+      overflow: hidden;
+      isolation: isolate;
+      background:
+        radial-gradient(ellipse at 75% 25%, rgba(216,102,187,.35), transparent 35%),
+        linear-gradient(145deg, #38253A 0%, #211A27 48%, #111017 100%);
+      border: 1px solid rgba(255,255,255,.1);
+    }
+
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background: linear-gradient(
+        0deg,
+        rgba(16,16,22,.88) 0%,
+        rgba(16,16,22,.15) 48%,
+        rgba(16,16,22,.08) 100%
+      );
+    }
+
+    .hero-visual img {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: .88;
+    }
+
+    .hero-visual .hero-image-overlay {
+      position: absolute;
+      z-index: 2;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(
+        120deg,
+        rgba(16,16,22,.12),
+        transparent 45%,
+        rgba(16,16,22,.2)
+      );
+    }
+
+    .hero-floating-card {
+      position: absolute;
+      z-index: 3;
+      left: 25px;
+      bottom: 25px;
+      background: rgba(24,23,32,.94);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 17px 20px;
+      max-width: 235px;
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-floating-card strong {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 3px;
+    }
+
+    .hero-floating-card span {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .hero-image-label {
+      position: absolute;
+      z-index: 3;
+      top: 25px;
+      right: 25px;
+      padding: 10px 15px;
+      background: rgba(16,16,22,.7);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 30px;
+      color: #fff;
+      font-size: 11px;
+      backdrop-filter: blur(10px);
+    }
+
+    /* Image fallback */
+
+    .image-fallback {
+      background:
+        radial-gradient(circle at 70% 30%, rgba(216,102,187,.3), transparent 35%),
+        linear-gradient(135deg, #302337, #17151F);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .image-fallback::before {
+      content: "✚";
+      position: absolute;
+      font-size: 100px;
+      color: rgba(255,255,255,.08);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    /* Trust strip */
+
+    .trust-strip {
+      padding: 28px 0;
+      background: #17151D;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 25px;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-align: left;
+    }
+
+    .trust-icon {
+      color: var(--primary);
+      font-size: 25px;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-size: 13px;
+    }
+
+    .trust-item span:last-child {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* Services */
+
+    .services {
+      background: var(--background);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      padding: 32px 27px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: .3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      border-color: rgba(216,102,187,.55);
+      background: var(--surface-light);
+    }
+
+    .service-icon {
+      width: 57px;
+      height: 57px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: rgba(216,102,187,.12);
+      color: var(--primary);
+      margin-bottom: 24px;
+    }
+
+    .service-icon svg {
+      width: 29px;
+      height: 29px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .service-card h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 19px;
+    }
+
+    .text-link {
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .text-link:hover {
+      color: #F2A5DE;
+    }
+
+    /* About */
+
+    .about {
+      background: #17151D;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 75px;
+      align-items: center;
+    }
+
+    .about-image {
+      min-height: 460px;
+      position: relative;
+      border-radius: 25px;
+      overflow: hidden;
+      background: #211A27;
+      border: 1px solid var(--border);
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .about-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin: 28px 0 32px;
+    }
+
+    .about-point {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: #EAE6EE;
+    }
+
+    .check {
+      color: var(--primary);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    /* Process */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 25px;
+    }
+
+    .process-card {
+      padding: 28px;
+      border-radius: var(--radius);
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+
+    .process-number {
+      font-family: "Playfair Display", serif;
+      color: var(--primary);
+      font-size: 43px;
+      margin-bottom: 14px;
+    }
+
+    .process-card h3 {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .process-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Team */
+
+    .team {
+      background: #17151D;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 20px;
+    }
+
+    .team-card {
+      text-align: center;
+      padding: 28px 18px;
+      border-radius: var(--radius);
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+
+    .doctor-avatar {
+      width: 92px;
+      height: 92px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #D866BB, #68405F);
+      color: #fff;
+      font-family: "Playfair Display", serif;
+      font-size: 29px;
+      border: 4px solid rgba(216,102,187,.17);
+    }
+
+    .team-card h3 {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    .team-card p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* Insurance */
+
+    .insurance {
+      background: var(--background);
+    }
+
+    .insurance-grid {
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      gap: 15px;
+    }
+
+    .insurance-item {
+      min-height: 85px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 15px;
+      border-radius: 13px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: #E9E4EC;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    /* Testimonials */
+
+    .testimonial-section {
+      background: #17151D;
+    }
+
+    .testimonial-card {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      text-align: center;
+    }
+
+    .stars {
+      color: var(--primary);
+      font-size: 21px;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-card blockquote {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(20px,3vw,27px);
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Contact */
+
+    .contact {
+      background:
+        radial-gradient(circle at 90% 20%, rgba(216,102,187,.13), transparent 32%),
+        var(--background);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 60px;
+    }
+
+    .contact-info > p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 23px;
+    }
+
+    .contact-detail-icon {
+      width: 45px;
+      height: 45px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      color: var(--primary);
+      background: rgba(216,102,187,.12);
+      border-radius: 13px;
+      font-size: 19px;
+    }
+
+    .contact-detail strong {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 3px;
+    }
+
+    .contact-detail span,
+    .contact-detail a {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .contact-panel {
+      padding: 35px;
+      border-radius: 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+
+    .contact-panel h3 {
+      font-size: 22px;
+      margin-bottom: 22px;
+    }
+
+    .contact-panel form {
+      display: grid;
+      gap: 15px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .contact-panel input,
+    .contact-panel select,
+    .contact-panel textarea {
+      width: 100%;
+      background: #111017;
+      color: #fff;
+      border: 1px solid var(--border);
+      padding: 14px 15px;
+      border-radius: 10px;
+      outline: none;
+      font: inherit;
+      font-size: 13px;
+    }
+
+    .contact-panel input:focus,
+    .contact-panel select:focus,
+    .contact-panel textarea:focus {
+      border-color: var(--primary);
+    }
+
+    .contact-panel textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .contact-panel select option {
+      background: #181720;
+    }
+
+    /* Footer */
+
+    .site-footer {
+      background: #0B0A10;
+      border-top: 1px solid var(--border);
+      padding: 65px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 45px;
+    }
+
+    .footer-about p {
+      color: var(--muted);
+      font-size: 13px;
+      max-width: 290px;
+      margin-top: 18px;
+    }
+
+    .footer-column h4 {
+      font-size: 14px;
+      margin-bottom: 19px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column a,
+    .footer-column li {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer-column a:hover {
+      color: var(--primary);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      color: #89838F;
+      font-size: 11px;
+    }
+
+    /* Mobile contact bar */
+
+    .mobile-contact-bar {
+      display: none;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 1000px) {
+      .nav-links {
+        gap: 17px;
+      }
+
+      .nav-links a {
+        font-size: 12px;
+      }
+
+      .hero-grid {
+        gap: 35px;
+      }
+
+      .team-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .section {
+        padding: 75px 0;
+      }
+
+      .nav-wrapper {
+        min-height: 72px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-actions .btn {
+        display: none;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: #15131B;
+        padding: 20px;
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li a {
+        display: block;
+        padding: 12px 5px;
+        font-size: 14px;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid {
+        gap: 40px;
+      }
+
+      .hero-visual {
+        min-height: 330px;
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 25px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .about-grid {
+        gap: 40px;
+      }
+
+      .about-image,
+      .about-image img {
+        min-height: 330px;
+        height: 330px;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .insurance-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .mobile-contact-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 12px 15px;
+        background: rgba(16,16,22,.97);
+        border-top: 1px solid var(--border);
+        backdrop-filter: blur(12px);
+      }
+
+      .mobile-contact-bar .btn {
+        padding: 12px 10px;
+        font-size: 12px;
+      }
+
+      body {
+        padding-bottom: 75px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        width: min(100% - 30px, var(--container));
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .hero-content > p {
+        font-size: 14px;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .team-grid {
+        grid-template-columns: repeat(2,1fr);
+        gap: 12px;
+      }
+
+      .team-card {
+        padding: 23px 10px;
+      }
+
+      .doctor-avatar {
+        width: 72px;
+        height: 72px;
+        font-size: 23px;
+      }
+
+      .about-points {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-panel {
+        padding: 23px 17px;
+      }
+
+      .testimonial-card {
+        padding: 28px 20px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px 18px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+
+      <a href="#home" class="logo" aria-label="Clinica Leen home">
+        <span class="logo-mark">+</span>
+        <span>
+          CLINICA LEEN
+          <small>MEDICAL CENTER</small>
+        </span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#insurance">Insurance</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="tel:+97165551101" class="btn btn-primary">Book an Appointment</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <div class="eyebrow">Welcome to Clinica Leen</div>
+
+          <h1>
+            Your Health,
+            <span>Our Priority.</span>
+          </h1>
+
+          <p>
+            Discover professional medical care in a welcoming environment.
+            At Clinica Leen Medical Center, our focus is on patient comfort,
+            personalised attention and quality healthcare.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Book an Appointment ↗</a>
+            <a href="#services" class="btn btn-outline">Explore Services</a>
+          </div>
+
+          <div class="hero-note">
+            <span class="hero-note-icon">✚</span>
+            <span>Professional care with a patient-first approach</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" id="heroVisual">
+
+          <!--
+            Hero image source:
+            If the image host is blocked, the CSS gradient remains visible.
+            Replace this URL with a WordPress Media Library image URL
+            for a permanent, site-controlled image.
+          -->
+          <img
+            id="heroImage"
+            src="https://images.pexels.com/photos/3845653/pexels-photo-3845653.jpeg?auto=compress&cs=tinysrgb&w=1400"
+            alt="Healthcare professional in a modern clinical environment"
+            loading="eager"
+            fetchpriority="high"
+          >
+
+          <div class="hero-image-overlay"></div>
+
+          <div class="hero-image-label">Patient-focused healthcare</div>
+
+          <div class="hero-floating-card">
+            <strong>Care That Comes First</strong>
+            <span>Making your healthcare experience comfortable and welcoming.</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="trust-strip">
+      <div class="container trust-grid">
+
+        <div class="trust-item">
+          <span class="trust-icon">✚</span>
+          <div>
+            <strong>Patient Focused</strong>
+            <span>Care centred around you</span>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">♡</span>
+          <div>
+            <strong>Personalised Care</strong>
+            <span>Attention to your needs</span>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">✧</span>
+          <div>
+            <strong>Modern Environment</strong>
+            <span>Comfortable surroundings</span>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">✓</span>
+          <div>
+            <strong>Professional Team</strong>
+            <span>Dedicated healthcare staff</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+      <div class="container">
+
+        <div class="section-header center">
+          <div class="eyebrow">What We Offer</div>
+          <h2 class="section-heading">Healthcare Services Designed Around You</h2>
+          <p class="section-description">
+            Explore our healthcare services and connect with our team to
+            find the right care for your needs.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3v18M3 12h18"/>
+                <circle cx="12" cy="12" r="9"/>
+              </svg>
+            </div>
+            <h3>General Healthcare</h3>
+            <p>Healthcare support focused on your individual needs and wellbeing.</p>
+            <a href="#contact" class="text-link">Enquire Now →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 3c-3 0-4 3-3 7l2 9c.5 2 2 3 3 1l3-6 3 6c1 2 2.5 1 3-1l2-9c1-4 0-7-3-7-2 0-3 2-5 2S9 3 7 3z"/>
+              </svg>
+            </div>
+            <h3>Dental Care</h3>
+            <p>Supporting oral health through attentive dental care and guidance.</p>
+            <a href="#contact" class="text-link">Enquire Now →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 21s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.5-8 11-8 11z"/>
+              </svg>
+            </div>
+            <h3>Preventive Care</h3>
+            <p>Helping patients take informed steps towards maintaining their health.</p>
+            <a href="#contact" class="text-link">Enquire Now →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2v20M2 12h20"/>
+                <path d="M5 5l14 14M19 5L5 19"/>
+              </svg>
+            </div>
+            <h3>Medical Consultation</h3>
+            <p>Personal consultations to discuss your healthcare concerns and needs.</p>
+            <a href="#contact" class="text-link">Enquire Now →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <rect x="4" y="4" width="16" height="16" rx="3"/>
+                <path d="M8 12h8M12 8v8"/>
+              </svg>
+            </div>
+            <h3>Diagnostic Support</h3>
+            <p>Supporting your healthcare journey with appropriate assessment and guidance.</p>
+            <a href="#contact" class="text-link">Enquire Now →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/>
+              </svg>
+            </div>
+            <h3>Patient Support</h3>
+            <p>Friendly assistance to help make your experience clear and comfortable.</p>
+            <a href="#contact" class="text-link">Enquire Now →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+
+        <div class="about-image image-fallback">
+          <img
+            src="https://images.pexels.com/photos/3845766/pexels-photo-3845766.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="Healthcare professional in a clinical setting"
+            loading="lazy"
+            onerror="this.style.display='none';"
+          >
+        </div>
+
+        <div class="about-content">
+          <div class="eyebrow">About Clinica Leen</div>
+
+          <h2 class="section-heading">A Healthcare Experience Built Around People</h2>
+
+          <p>
+            Clinica Leen Medical Center is based in Warehouses Land,
+            Sharjah, UAE. We aim to provide a welcoming healthcare
+            environment where patients can feel comfortable discussing
+            their needs.
+          </p>
+
+          <p>
+            Our approach focuses on attentive service, clear communication
+            and helping patients understand their healthcare options.
+          </p>
+
+          <div class="about-points">
+            <div class="about-point"><span class="check">✓</span> Patient-centred approach</div>
+            <div class="about-point"><span class="check">✓</span> Welcoming environment</div>
+            <div class="about-point"><span class="check">✓</span> Professional assistance</div>
+            <div class="about-point"><span class="check">✓</span> Personal attention</div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">Contact Our Team ↗</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section">
+      <div class="container">
+
+        <div class="section-header center">
+          <div class="eyebrow">Your Visit</div>
+          <h2 class="section-heading">A Simple Way to Get Started</h2>
+          <p class="section-description">
+            Getting in touch with our team is straightforward.
+            We are here to help you with your enquiry.
+          </p>
+        </div>
+
+        <div class="process-grid">
+
+          <article class="process-card">
+            <div class="process-number">01</div>
+            <h3>Contact Our Team</h3>
+            <p>Call us or send an enquiry to discuss your requirements.</p>
+          </article>
+
+          <article class="process-card">
+            <div class="process-number">02</div>
+            <h3>Discuss Your Needs</h3>
+            <p>Share your questions and receive information about the next steps.</p>
+          </article>
+
+          <article class="process-card">
+            <div class="process-number">03</div>
+            <h3>Arrange Your Visit</h3>
+            <p>Speak with our team about arranging an appointment.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section team" id="team">
+      <div class="container">
+
+        <div class="section-header center">
+          <div class="eyebrow">Our Professionals</div>
+          <h2 class="section-heading">Meet Our Medical Team</h2>
+          <p class="section-description">
+            Our team is committed to providing attentive service
+            and supporting patients throughout their healthcare journey.
+          </p>
+        </div>
+
+        <div class="team-grid">
+
+          <article class="team-card">
+            <div class="doctor-avatar">RS</div>
+            <h3>Dr Rahaf Shukri</h3>
+            <p>Medical Professional</p>
+          </article>
+
+          <article class="team-card">
+            <div class="doctor-avatar">AG</div>
+            <h3>Dr Ahmed Ghazal</h3>
+            <p>Medical Professional</p>
+          </article>
+
+          <article class="team-card">
+            <div class="doctor-avatar">NH</div>
+            <h3>Dr Nour Adel Hayek</h3>
+            <p>Medical Professional</p>
+          </article>
+
+          <article class="team-card">
+            <div class="doctor-avatar">SY</div>
+            <h3>Dr Samah Yaseen</h3>
+            <p>Medical Professional</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INSURANCE -->
+    <section class="section insurance" id="insurance">
+      <div class="container">
+
+        <div class="section-header center">
+          <div class="eyebrow">Insurance Information</div>
+          <h2 class="section-heading">Insurance Partners</h2>
+          <p class="section-description">
+            Contact our team to confirm your insurance coverage,
+            eligibility and applicable terms before your appointment.
+          </p>
+        </div>
+
+        <div class="insurance-grid">
+          <div class="insurance-item">Daman</div>
+          <div class="insurance-item">NAS / Neuron</div>
+          <div class="insurance-item">NextCare</div>
+          <div class="insurance-item">Al Buhaira</div>
+          <div class="insurance-item">Al Madallah</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="section testimonial-section">
+      <div class="container">
+
+        <div class="section-header center">
+          <div class="eyebrow">Patient Experience</div>
+          <h2 class="section-heading">Your Comfort Matters</h2>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>
+            Your healthcare experience should feel welcoming,
+            comfortable and centred around your needs.
+          </blockquote>
+          <p>Clinica Leen Medical Center</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-info">
+          <div class="eyebrow">Get In Touch</div>
+          <h2 class="section-heading">Let's Talk About Your Healthcare Needs</h2>
+
+          <p>
+            Have a question or want to arrange an appointment?
+            Contact our team and we will help you with your enquiry.
+          </p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">⌖</div>
+            <div>
+              <strong>Our Location</strong>
+              <span>Warehouses Land, Sharjah, United Arab Emirates</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">☎</div>
+            <div>
+              <strong>Call Us</strong>
+              <a href="tel:+97165551101">+971 6 555 1101</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉</div>
+            <div>
+              <strong>Email Us</strong>
+              <a href="mailto:info@clinicaleen.ae">info@clinicaleen.ae</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">◉</div>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/971507101838" target="_blank" rel="noopener">+971 50 710 1838</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-panel">
+          <h3>Send Us an Enquiry</h3>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="tel" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <select name="service" required>
+              <option value="">Select a Service</option>
+              <option>General Healthcare</option>
+              <option>Dental Care</option>
+              <option>Preventive Care</option>
+              <option>Medical Consultation</option>
+              <option>Diagnostic Support</option>
+              <option>Other Enquiry</option>
+            </select>
+
+            <textarea name="message" placeholder="How can we help you?"></textarea>
+
+            <button type="submit" class="btn btn-primary">Send Enquiry ↗</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-about">
+          <a href="#home" class="logo">
+            <span class="logo-mark">+</span>
+            <span>
+              CLINICA LEEN
+              <small>MEDICAL CENTER</small>
+            </span>
+          </a>
+
+          <p>
+            A welcoming healthcare environment in Sharjah,
+            focused on patient comfort and attentive service.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#services">General Healthcare</a></li>
+            <li><a href="#services">Dental Care</a></li>
+            <li><a href="#services">Preventive Care</a></li>
+            <li><a href="#services">Medical Consultation</a></li>
+            <li><a href="#services">Patient Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li>Warehouses Land, Sharjah</li>
+            <li><a href="tel:+97165551101">+971 6 555 1101</a></li>
+            <li><a href="mailto:info@clinicaleen.ae">info@clinicaleen.ae</a></li>
+            <li><a href="https://wa.me/971507101838" target="_blank" rel="noopener">WhatsApp Us</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="currentYear"></span> Clinica Leen Medical Center. All rights reserved.</span>
+        <span>Designed with care.</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MOBILE CONTACT BAR -->
+  <div class="mobile-contact-bar">
+    <a href="tel:+97165551101" class="btn btn-primary">☎ Call Now</a>
+    <a href="https://wa.me/971507101838" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    document.querySelectorAll("#navLinks a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    // Footer year
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+    // Hero image fallback
+    const heroImage = document.getElementById("heroImage");
+    const heroVisual = document.getElementById("heroVisual");
+
+    heroImage.addEventListener("error", function () {
+      heroImage.style.display = "none";
+      heroVisual.classList.add("image-fallback");
+    });
+
+    // Contact form opens WhatsApp with enquiry details
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const form = new FormData(this);
+
+      const name = form.get("name");
+      const phone = form.get("phone");
+      const email = form.get("email");
+      const service = form.get("service");
+      const message = form.get("message");
+
+      const whatsappMessage =
+        "Hello Clinica Leen Medical Center,\n\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Email: " + email + "\n" +
+        "Service: " + service + "\n" +
+        "Message: " + (message || "I would like more information.");
+
+      const whatsappURL =
+        "https://wa.me/971507101838?text=" +
+        encodeURIComponent(whatsappMessage);
+
+      window.open(whatsappURL, "_blank", "noopener");
+    });
+  </script>
+
+</body>
+</html>
